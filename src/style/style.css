@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@keyframes showTopText {
+    0% {
+        transform: translate3d(0, 100%, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(0, 60%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes showBottomText {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animated-title {
+    color: #222;
+    height: 400px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.animated-title>div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.animated-title>div div {
+    font-size: 12vmin;
+    padding: 2vmin 0;
+    position: absolute;
+}
+
+.animated-title>div div span {
+    display: flex;
+    justify-content: center;
+}
+
+.animated-title>div.text-top {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.animated-title>div.text-top div {
+    animation: showTopText 1.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+}
+
+.animated-title>div.text-bottom {
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.animated-title>div.text-bottom div {
+    animation: showBottomText 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+    font-size: 45px;
+}
+
+.text-top-hello {
+    font-size: 30px;
+}
+
+.text-top-name {
+    font-size: 50px;
+}
+
+.text-top-position {
+    font-size: 10px;
+}
+
+.intro {}
+
+.btns {
+    position: relative;
+    padding-top: 300px;
+}
+
+.button-text:hover {
+    color: white;
+}
