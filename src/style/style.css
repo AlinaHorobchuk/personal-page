@@ -107,3 +107,43 @@
 .button-text:hover {
     color: white;
 }
+
+
+/* Задаем высоту большим блокам, чтобы у нас на странице получится скролл */
+
+.element-big {
+    width: 100%;
+}
+
+.element-animation {
+    /* Скроем элемент в начальном состоянии */
+    opacity: 0;
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.img-style img {
+    width: 70%;
+}
+
+.img-style {
+    padding: 50px 100px;
+}
+
+.arrow-down {
+    width: 50px;
+    height: 50px;
+    transform: rotate(-90deg);
+}
+
+.mail-gif {
+    width: 50px;
+    height: 50px;
+}
+
+.main-about {
+    font-size: 80px;
+}
