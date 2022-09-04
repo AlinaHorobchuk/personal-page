@@ -233,6 +233,10 @@ p {
     margin-bottom: 50px;
 }
 
+.second-project {
+    display: inline-block;
+}
+
 @media (max-width:980px) {
     .projects-img {
         display: flex;
